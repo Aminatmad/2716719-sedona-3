@@ -2,7 +2,7 @@
 
 * Студент: [Полина  Мадыка](https://up.htmlacademy.ru/htmlcss-individual/3/user/2716719).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
-
+* сайт: [мой сайт](https://aminatmad.github.io/2716719-sedona-3/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
