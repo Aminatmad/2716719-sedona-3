@@ -58,12 +58,13 @@
     <main class="main-inner" data-test="main">
       <section class="filter" data-test="filter">
       <h1 class="filter-title">Гостиницы Седоны</h1>
-      <ul class="breadcrooms">
+
+      <ul class="breadcrooms-list">
         <li class="breadcrooms-item">
-          <a class="breadcrooms-item-main" href="index.html">
-            <span class="visually-hidden">
-              Главная
-            </span>
+          <a class="breadcrooms-link"
+          href="index.html"
+          aria-label="Главная страница">
+
             <img class="breadcrooms-icon"
             src="./images/Vector-home.svg"
             width="12"
@@ -72,7 +73,7 @@
           </a>
         </li>
         <li class="breadcrooms-item">
-          <a class="breadcrooms-item">Гостиницы</a>
+          <span class="breadcrooms-link">Гостиницы</span>
         </li>
       </ul>
 
@@ -91,8 +92,7 @@
           <label class="filter-conrol">
             <input class="filter-conrol-input"
             type="checkbox"
-            name="swimming-pool"
-            checked>
+            name="swimming-pool">
             Бассейн
           </label>
           </li>
@@ -101,8 +101,7 @@
           <label class="filter-conrol">
             <input class="filter-conrol-input"
           type="checkbox"
-          name="parking"
-          checked>
+          name="parking">
           парковка
         </label>
           </li>
@@ -111,7 +110,7 @@
           <label class="filter-conrol">
             <input class="filter-conrol-input"
             name="WI-FI"
-            checked>
+            type="checkbox">
             WI-FI
           </label>
           </li>
@@ -125,7 +124,8 @@
           <label class="filter-conrol">
             <input class="filter-conrol-input"
             type="radio"
-            name="housing" value="hotel">
+            name="housing"
+            value="hotel">
             Гостиница
             </label>
             </li>
@@ -133,6 +133,7 @@
           <li class="filter-item">
           <label class="filter-conrol">
             <input class="filter-conrol-input"
+            type="radio"
             name="housing"
             value="motel">
             Мотель
@@ -141,6 +142,7 @@
           <li class="filter-item">
           <label class="filter-conrol">
             <input class="filter-conrol-input"
+            type="radio"
            name="housing"
            value="apartments">
            Апартаменты
