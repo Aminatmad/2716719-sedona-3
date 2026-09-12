@@ -169,8 +169,8 @@ ul {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .advantages-item {
@@ -181,9 +181,11 @@ ul {
 }
 
 .advantages-item:first-child,
-.advantages-item:last-child {
-  width: 1200px;
-  flex-direction: row;
+.advantages-item:last-child{
+    grid-column: 1 / -1;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
 }
 
 .advantages-container-name,
@@ -540,6 +542,12 @@ ul {
   flex-direction: column;
 }
 
+.catalog-toolbar {
+display: grid;
+grid-template-columns: 1fr 292px 48px 48px 48px;
+gap: 8px;
+align-items: center;
+}
 .catalog-title {
   margin: 0;
   font-size: 30px;
@@ -551,7 +559,7 @@ ul {
 .select-control {
   width: 292px;
   min-height: 49px;
-  margin-top: 40px;
+  margin: 0;
   padding: 0 20px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -560,7 +568,7 @@ ul {
 .view-button {
   width: 48px;
   height: 48px;
-  margin-left: 8px;
+  margin-left: 0;
 }
 
 .hotels-gallery {
@@ -569,8 +577,8 @@ ul {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -636,11 +644,12 @@ ul {
 }
 
 .pagination {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
   margin-top: 40px;
+}
+.pagination-list {
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    gap: 8px;
 }
 
 .pagination a,
