@@ -116,11 +116,17 @@ ul {
 }
 
 .navigation-user .navigation-item:last-child .navigation-link {
+    display: block;
   margin-left: 20px;
   padding: 8px 34px;
   border-radius: 4px;
   background-color: #756157;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
 }
 
 .hero {
@@ -400,9 +406,11 @@ ul {
 }
 
 .footer-phone {
+    display: block;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
+  font-weight: 700;
   text-decoration: none;
 }
 
