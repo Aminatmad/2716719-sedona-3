@@ -178,15 +178,15 @@ body {
 }
 
 .advantages-item:nth-child(2) .advantages-container-comfort {
-  background-color: #f2f2f2;
+  background-color: #83b3d31f;
 }
 
 .advantages-item:nth-child(3) .advantages-container-road {
-  background-color: #e6f0f6;
+  background-color: #83b3d333;
 }
 
 .advantages-item:nth-child(4) .advantages-container-comfort {
-  background-color: #f2f2f2;
+  background-color: #83b3d31f;
 }
 
 .advantages-title {
@@ -239,7 +239,7 @@ body {
 }
 
 .services-list > li:nth-child(1) {
-  background-color: #ffffff;
+  background-color: #83b3d333;
 }
 
 .services-list > li:nth-child(2) {
@@ -247,7 +247,7 @@ body {
 }
 
 .services-list > li:nth-child(3) {
-  background-color: #ffffff;
+  background-color: #83b3d333;
 }
 
 .services-name {
