@@ -391,13 +391,13 @@ ul {
   justify-content: space-between;
 }
 
-.social-list {
+.footer-social-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.social-list a {
+.footer-social-list a {
   display: flex;
   width: 48px;
   height: 40px;
@@ -405,7 +405,7 @@ ul {
   justify-content: center;
 }
 
-.footer-phone {
+.footer-contacts-phone {
     display: block;
   color: #000000;
   font-size: 40px;
