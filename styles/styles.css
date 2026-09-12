@@ -95,7 +95,7 @@ body {
   min-height: 485px;
   padding-top: 51px;
   background:
-    url("../images/divider.svg") bottom center / 100% auto no-repeat,
+    url("../images/divider.svg") top 430px center / 100% auto no-repeat,
     url("../images/background/index-background.jpg") top center / 100% 485px no-repeat;
 }
 
@@ -177,6 +177,18 @@ body {
   background-color: #ffffff;
 }
 
+.advantages-item:nth-child(2) .advantages-container-comfort {
+  background-color: #f2f2f2;
+}
+
+.advantages-item:nth-child(3) .advantages-container-road {
+  background-color: #e6f0f6;
+}
+
+.advantages-item:nth-child(4) .advantages-container-comfort {
+  background-color: #f2f2f2;
+}
+
 .advantages-title {
   margin: 0 0 30px;
   font-size: 24px;
@@ -226,13 +238,16 @@ body {
   text-align: center;
 }
 
-.services-list > li:nth-child(2) {
+.services-list > li:nth-child(1) {
   background-color: #ffffff;
 }
 
-.services-list > li:nth-child(1),
-.services-list > li:nth-child(3) {
+.services-list > li:nth-child(2) {
   background-color: #f2f2f2;
+}
+
+.services-list > li:nth-child(3) {
+  background-color: #ffffff;
 }
 
 .services-name {
@@ -283,7 +298,9 @@ body {
 
 .subscribe {
   padding: 96px 20px;
-  background-color: #82b3d3;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/background/index-background-blur.jpg") center / cover no-repeat;
   color: #ffffff;
   text-align: center;
 }
@@ -320,7 +337,7 @@ body {
 .button-subscride-button {
   padding: 14px 25px;
   border: 0;
-  background-color: #4f8db5;
+  background-color: #82b3d3;
   color: #ffffff;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -520,6 +537,21 @@ body {
   text-transform: uppercase;
 }
 
+.select-control {
+  padding: 12px 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.view-button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
@@ -555,6 +587,30 @@ body {
   margin: 8px 0 0;
   font-size: 18px;
   line-height: 21px;
+}
+
+.hotel-card a {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #756157;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hotel-card button {
+  padding: 8px 20px;
+  border: 0;
+  background-color: #82b3d3;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .pagination {
