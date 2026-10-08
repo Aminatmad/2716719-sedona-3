@@ -916,11 +916,17 @@ input {
 
 .hotel-card {
   display: flex;
-  width: 100%;
-  max-width: 300px;
+  width: 340px;
+  height: 438px;
+  padding: 20px;
   flex-direction: column;
+  gap: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #ffffff;
   overflow: hidden;
 }
+
 
 .hotel-image {
   display: block;
