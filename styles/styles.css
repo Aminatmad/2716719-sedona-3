@@ -100,7 +100,7 @@ body {
 
 .header-logo {
   display: block;
-  margin-right: 30px;
+  margin-right: 28px;
   height: 64px;
 }
 
@@ -152,6 +152,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 20px 16px;
+  transform: translateY(1px);
 }
 
 .navigation-link:hover {
@@ -231,6 +232,7 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: auto;
+  transform: translateY(2px);
 }
 
 .navigation-button:hover {
@@ -265,7 +267,7 @@ body {
 
 /* ============ ПРЕИМУЩЕСТВА ============ */
 .advantages {
-  padding-top: 69px;
+  padding-top: 71px;
 }
 
 .advantages-title {
@@ -275,7 +277,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 28px;
-  margin-top: 0;
+  margin-top: -1px;
 }
 
 .advantages-text {
@@ -283,7 +285,7 @@ body {
   font-size: 22px;
   line-height: 20px;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 92px;
   margin-top: 0;
 }
 
@@ -298,23 +300,32 @@ body {
 .advantages-item {
   background-color: #82b3d3;
   display: flex;
+
 }
 
 .advantages-wrapper {
   width: 400px;
-  min-height: 385px;
-  margin: 0 auto;
+  height: 385px;
+  margin: 0;
   padding: 102px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: -2px;
 }
 
 .advantages-picture {
   width: 800px;
-  height: 385px;
+  height: auto;
   object-fit: cover;
+  display: block;
+  border: none;
+
 }
 
 .advantages-item-sedona {
-  color: #000000;
+  color:#000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -324,7 +335,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 112px 75px;
+  padding: 0 75px;
+  height: 385px;
+  box-sizing: border-box;
+  margin-top: 2px;
 }
 
 .advantages-item-sedona:nth-child(odd) {
@@ -347,15 +361,15 @@ body {
 }
 
 .advantages-title-sedona {
-  position: relative;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  margin-top: 0;
+position: relative;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 2px;
 }
 
 .advantages-title-sedona::after {
@@ -398,15 +412,15 @@ body {
 
 /* ============ СЕРВИС ============ */
 .title-call {
-  color: #000000;
-  font-size: 30px;
-  line-height: 38px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0;
-  margin-top: 60px;
-  margin-bottom: 22px;
+color: #000000;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 62px;
+    margin-bottom: 22px;
 }
 
 .description-call {
@@ -416,7 +430,7 @@ body {
   text-align: center;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 52px;
+  margin-bottom: 68px;
 }
 
 .recommend-list {
@@ -432,9 +446,9 @@ body {
 
 .recommend-item {
   margin: 0;
-  padding: 60px 40px;
+  padding: 0 75px;
   width: 400px;
-  min-height: 400px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -452,20 +466,20 @@ body {
   background-image: url("../images/icon/lodging.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: center 96px;
+  background-position: center 83px;
 }
 
 .recommend-food {
   background-image: url("../images/icon/food.svg");
   background-repeat: no-repeat;
-  background-position: center 98px;
+  background-position: center 83px;
   background-size: 74px 70px;
 }
 
 .recommend-gift {
   background-image: url("../images/icon/souvenir.svg");
   background-repeat: no-repeat;
-  background-position: center 96px;
+  background-position: center 80px;
   background-size: 76px 76px;
 }
 
@@ -474,11 +488,11 @@ body {
 }
 
 .recommend-item-list {
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 139px 0 30px;
+    font-size: 24px;
+    line-height: 116px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 140px 0 -13px
 }
 
 .recommend-list-list {
@@ -676,12 +690,15 @@ body {
 
 /* --- ХЛЕБНЫЕ КРОШКИ --- */
 .breadcrumbs {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 10px;
+display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+    transform: translateX(2px);
+    margin-left: -1px;
+    margin-top: 10px;
 }
 
 .breadcrumbs-link {
@@ -703,7 +720,7 @@ body {
 
 .breadcrumbs-item {
   display: flex;
-  gap: 10px;
+  gap: 11px;
   align-items: center;
   font-size: 16px;
 }
@@ -739,10 +756,11 @@ body {
 }
 
 .catalog-filter-title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 32px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 32px;
+    margin-left: -2px;
 }
 
 .catalog-products-list {
@@ -934,7 +952,7 @@ body {
 }
 
 .price-toggle-max {
-  right: -10px;
+  right: -1px;
 }
 
 /* --- КНОПКИ ФИЛЬТРА --- */
@@ -1016,30 +1034,33 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin-top: -2px;
   margin-right: auto;
 }
 
 .select-control {
-  width: 292px;
-  height: 49px;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
-  padding: 0 50px 0 20px;
-  margin-right: 70px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("../images/icon/down-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 12px 12px;
-  cursor: pointer;
+width: 292px;
+    height: 49px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 0 50px 0 20px;
+    margin-right: 50px;
+    margin-left: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/icon/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 12px 12px;
+    cursor: pointer;
+    transform: translateX(-18px);
+    margin-top: -28px;
 }
 
 .select-control:hover {
@@ -1052,15 +1073,16 @@ body {
 }
 
 .card-grid-toggle {
-  display: flex;
-  margin-right: 8px;
-  width: 48px;
-  height: 48px;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border-radius: 4px;
-  border: 2px solid #e5e5e5;
+display: flex;
+    margin-right: 5px;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    margin-top: -29px;
 }
 
 .card-grid-toggle:hover {
@@ -1073,7 +1095,7 @@ body {
 }
 
 .card-grid-toggle-active {
-  border: 2px solid #000000;
+  border-color: 2px solid #000000;
 }
 
 /* --- СПИСОК ГОСТИНИЦ --- */
@@ -1087,6 +1109,8 @@ body {
   padding-bottom: 40px;
   margin-bottom: 40px;
   border-bottom: 1px solid #e6e6e6;
+  margin-top: 0;
+  transform: translateX(-1px);
 }
 
 .product-card {
@@ -1096,6 +1120,7 @@ body {
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+
 }
 
 .card-img {
@@ -1216,12 +1241,12 @@ body {
 
 /* --- РЕЙТИНГ И ЗВЁЗДЫ --- */
 .rating-stars {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  height: 36px;
-  margin-left: -5px; /* Сдвигает звезды ВЛЕВО (минус тянет влево) */
-  padding-top: 4px;  /* Сдвигает звезды ВНИЗ */
+     display: flex;
+    gap: 6px;
+    align-items: center;
+    height: 34px;
+    margin-left: -6px;
+    padding-top: 4px;
 }
 
 
@@ -1261,7 +1286,7 @@ body {
 
 .rating {
   margin: 0;
-  padding: 8px 22px;
+  padding: 9px 22px;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -1279,8 +1304,9 @@ body {
   margin: 0;
   padding: 0;
   gap: 8px;
+  margin-top: -4px;
   list-style: none;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }
 
 .pagination-link {
@@ -1761,4 +1787,32 @@ body {
 .find-button:active {
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
+}
+/* ПЕРВЫЙ КВАДРАТИК (Плитка) */
+.sorting-container .card-grid-toggle:nth-child(3) {
+  transform: translateY(1px); /* Сдвигает вверх на 5px */
+  margin-left: 2px; /* Сдвигает вправо на 20px */
+}
+
+/* ВТОРОЙ КВАДРАТИК (Карточки) */
+.sorting-container .card-grid-toggle:nth-child(4) {
+  transform: translateX(2px); /* Сдвигает вниз на 5px */
+}
+
+/* ТРЕТИЙ КВАДРАТИК (Список) */
+.sorting-container .card-grid-toggle:nth-child(5) {
+  transform: translateX(5px); /* Сдвигает влево на 10px */
+}
+.product-list li:nth-child(4){
+  margin-top: -2px;
+}
+.social-footer-vk {
+transform: translateX(-2px);
+}
+.social-footer-yt {
+transform: translateX(-1px);
+}
+.title-part {
+  display: inline-block;
+  transform: translateX(-3px) translateY(1px);
 }
