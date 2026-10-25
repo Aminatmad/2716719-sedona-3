@@ -81,7 +81,8 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1200px;
-  transform: translateY(2px);
+  position: relative;
+  top: 2px;
 }
 
 /* ============ ХЭДЕР ============ */
@@ -136,7 +137,8 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  transform: translateY(-2px);
+  position: relative;
+  top: -2px;
 }
 
 .navigation-user {
@@ -154,7 +156,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 20px 16px;
-  transform: translateY(1px);
+  top: 1px;
 }
 
 .navigation-link:hover {
@@ -234,7 +236,8 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: auto;
-  transform: translateY(-2px);
+  position: relative;
+  top: -2px;
 }
 
 .navigation-button:hover {
@@ -269,6 +272,8 @@ body {
 /* ============ ПРЕИМУЩЕСТВА ============ */
 .advantages {
   padding-top: 71px;
+  position: relative;
+  top: -6px;
 }
 
 .advantages-title {
@@ -324,7 +329,7 @@ body {
 }
 
 .advantages-item-sedona {
-  color:#000000;
+  color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -418,8 +423,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding: 0;
-  margin-top: 62px;
+  margin-top: 55px;
   margin-bottom: 22px;
+  position: relative;
 }
 
 .description-call {
@@ -508,6 +514,8 @@ body {
   margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 96px;
+  position: relative;
+
 }
 
 .interested-title {
@@ -608,6 +616,8 @@ body {
   display: flex;
   margin: 0 auto;
   width: 684px;
+  position: relative;
+  top: 4px;
 }
 
 .field-email {
@@ -685,7 +695,8 @@ body {
   line-height: 78px;
   margin-top: 0;
   margin-bottom: 8px;
-  transform: translateY(-2px); /* Твой сдвиг */
+  position: relative;
+  top: -2px;
 }
 
 /* --- ХЛЕБНЫЕ КРОШКИ --- */
@@ -696,7 +707,8 @@ body {
   padding: 0;
   list-style: none;
   gap: 10px;
-  transform: translateX(2px);
+  position: relative;
+  left: 2px;
   margin-left: -1px;
   margin-top: 10px;
 }
@@ -741,7 +753,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
-  transform: translateY(-2px); /* Твой сдвиг */
+  position: relative;
+  top: -2px;
 }
 
 .catalog-filter-group {
@@ -777,6 +790,9 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  top: 2px;
+  left: 1px;
 }
 
 .catalog-item {
@@ -881,7 +897,7 @@ body {
   color: #000000;
   text-align: left;
   box-sizing: border-box;
-  transition: box-shadow 0.2s, background-color 0.2s
+  transition: box-shadow 0.2s, background-color 0.2s;
 }
 
 .field-price::-webkit-outer-spin-button,
@@ -1049,7 +1065,8 @@ body {
   margin-top: 55px;
   margin-bottom: 21px;
   padding: 0 1px 1px;
-  transform: translateY(4px); /* Твой сдвиг */
+  position: relative;
+  top: 4px;
 }
 
 .catalog-search {
@@ -1083,7 +1100,8 @@ body {
   background-position: right 20px center;
   background-size: 12px 12px;
   cursor: pointer;
-  transform: translateX(-18px);
+  position: relative;
+  left: -18px;
   margin-top: -28px;
 }
 
@@ -1134,7 +1152,8 @@ body {
   margin-bottom: 40px;
   border-bottom: 1px solid #e6e6e6;
   margin-top: 0;
-  transform: translateX(-1px);
+  position: relative;
+  left: -1px;
 }
 
 .product-card {
@@ -1274,7 +1293,8 @@ body {
   height: 34px;
   margin-left: -6px;
   padding-top: 4px;
-  transform: translateX(6px);
+  position: relative;
+  left: 6px;
 }
 
 .star-icon {
@@ -1304,7 +1324,8 @@ body {
   margin-top: -4px;
   list-style: none;
   margin-bottom: 62px;
-  transform: translateY(3px);
+  position: relative;
+  top: 3px;
 }
 
 .pagination-link {
@@ -1370,14 +1391,15 @@ body {
   padding: 20px 70px;
   min-height: 120px;
   align-items: center;
-  transform: translateY(-3px) ;
+  position: relative;
+  top: 0;
+  left: 2px;
 }
 
 .page-footer-index {
- transform: translateY(-5px);
+  position: relative;
+  top: -5px;
 }
-
-
 
 .footer-social-list {
   display: flex;
@@ -1411,7 +1433,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(0, -2px);
+  position: relative;
+  top: -2px;
 }
 
 .social-footer svg {
@@ -1439,7 +1462,8 @@ body {
   margin: auto;
   margin-top: 10px;
   text-decoration: none;
-  transform: translate(0,17px);
+  position: relative;
+  top: 17px;
 }
 
 .phone-number:hover {
@@ -1459,7 +1483,8 @@ body {
   display: block;
   margin: 0;
   margin-top: -13px;
-  transform: translateY(12px);
+  position: relative;
+  top: 12px;
 }
 
 .page-footer-link svg {
@@ -1659,10 +1684,10 @@ body {
 .modal-person-label .modal-label-text {
   padding: 0;
   white-space: nowrap;
-  transform: translateX(-2px);
+  position: relative;
+  left: -2px;
 }
 
-/* Исправленный дубль: теперь один блок modal-counter */
 .modal-counter {
   display: flex;
   align-items: center;
@@ -1691,7 +1716,6 @@ body {
   margin: 11px;
 }
 
-/* Исправленный дубль focus-visible */
 .modal-counter-button:focus-visible {
   outline: none;
   box-shadow: 0 0 0 2px #82b3d3;
@@ -1708,7 +1732,7 @@ body {
   left: 50%;
   margin-top: -1px;
   margin-left: -7px;
-  background-color: rgba(117, 97, 87, 0.3); /* Покой: 30% */
+  background-color: rgba(117, 97, 87, 0.3);
   transition: background-color 0.2s;
 }
 
@@ -1726,13 +1750,11 @@ body {
   background-color: #000000;
 }
 
-/* НАЖАТИЕ: черные с прозрачностью 20% */
 .modal-counter-button:active::before,
 .modal-counter-button:active::after {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* --- ИНПУТ С ЦИФРОЙ --- */
 .modal-input-counter {
   width: 20px;
   text-align: center;
@@ -1746,7 +1768,7 @@ body {
   line-height: 24px;
   border: none;
   color: #000000;
-  pointer-events: none; /* Запрещаем ввод вручную */
+  pointer-events: none;
 }
 
 .modal-input-counter::-webkit-outer-spin-button,
@@ -1755,7 +1777,6 @@ body {
   margin: 0;
 }
 
-/* --- Подсказка "!" --- */
 .modal-tooltip {
   position: relative;
   display: inline-flex;
@@ -1763,7 +1784,8 @@ body {
   height: 26px;
   align-items: center;
   justify-content: center;
-  transform: translateX(9px);
+  position: relative;
+  left: 9px;
 }
 
 .tooltip-button {
@@ -1823,7 +1845,6 @@ body {
   display: block;
 }
 
-/* --- Кнопка "Найти" --- */
 .find-button {
   display: block;
   font-family: inherit;
@@ -1852,24 +1873,24 @@ body {
 }
 
 .find-button:active {
-  background-color: #68a2ca;
-  color: rgba(255, 255, 255, 0.3);
+  background-color: #68a -2ca;
+  color: rgba(3255, 255, 255px, 0.3);
 }
 
-/* ПЕРВЫЙ КВАДРАТИК (Плитка) */
 .sorting-container .card-grid-toggle:nth-child(3) {
-  transform: translateY(1px); /* Сдвигает вверх на 5px */
-  margin-left: 2px; /* Сдвигает вправо на 20px */
+  position: relative;
+  top: 1px;
+  margin-left: 2px;
 }
 
-/* ВТОРОЙ КВАДРАТИК (Карточки) */
 .sorting-container .card-grid-toggle:nth-child(4) {
-  transform: translateX(2px); /* Сдвигает вниз на 5px */
+  position: relative;
+  left: 2px;
 }
 
-/* ТРЕТИЙ КВАДРАТИК (Список) */
 .sorting-container .card-grid-toggle:nth-child(5) {
-  transform: translateX(5px); /* Сдвигает влево на 10px */
+  position: relative;
+  left: 5px;
 }
 
 .product-list li:nth-child(4) {
@@ -1878,15 +1899,19 @@ body {
 
 .title-part {
   display: inline-block;
-  transform: translateX(-3px) translateY(1px);
+  position: relative;
+  left: -2px;
+  top: 4px;
 }
 
 .catalog-title {
-  transform: translateY(-2px); /* Заменили position на безопасный transform */
+  position: relative;
+  top: -2px;
 }
 
 .catalog-list {
-  transform: translateY(-1px); /* Заменили position на безопасный transform */
+  position: relative;
+  top: -1px;
 }
 
 label[for="check-in-date"],

@@ -10,7 +10,7 @@
 
   <body>
     <div class="page-container">
-      <header class="page-header coll">
+      <header class="page-header coll" data-test="header">
         <nav class="navigation">
           <a class="header-logo" href="index.html">
             <img class="header-logo-pic" src="images/logo/logo-sedona.svg" alt="Логотип Седона" width="138" height="64">
@@ -47,7 +47,7 @@
         <a class="navigation-button" href="#">Хочу сюда!</a>
       </header>
 
-      <main class="main-container">
+      <main class="main-container" data-test="main">
         <div class="page-container-catalog">
           <section class="inner-section">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -67,7 +67,7 @@
           <section class="catalog-product-filter">
             <h2 class="visually-hidden">Параметры выбора</h2>
 
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-products-list catalog-filter-list">
@@ -168,7 +168,7 @@
           </div>
         </section>
 
-        <section class="product-card-list coll">
+        <section class="product-card-list coll" data-test="catalog">
           <ul class="product-list">
             <li class="product-card">
               <a class="card-img" href="#">
@@ -278,7 +278,7 @@
           </ul>
         </section>
 
-        <section class="section-mail coll">
+        <section class="section-mail coll" data-test="subscribe">
           <h2 class="mail-title">Подпишитесь на рассылку</h2>
           <p class="mail-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-mail" action="https://echo.htmlacademy.ru/" method="post">
@@ -289,7 +289,7 @@
         </section>
       </main>
 
-      <footer class="page-footer coll">
+      <footer class="page-footer coll" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-footer social-footer-vk" href="https://vk.com/htmlacademy">
