@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -10,7 +9,6 @@
   </head>
 
   <body>
-
     <div class="page-container">
       <header class="page-header coll">
         <nav class="navigation">
@@ -89,7 +87,6 @@
 
             <li class="advantages-item">
               <img class="advantages-picture" src="images/sedona-2.jpg" alt="фото каньона" width="800" height="385">
-
               <div class="advantages-wrapper">
                 <h3 class="advantages-title-sedona">Там есть<br>мост дьявола</h3>
                 <p class="advantages-description-title">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
@@ -139,7 +136,7 @@
         </section>
       </main>
 
-      <footer class="page-footer coll">
+      <footer class="page-footer page-footer index coll">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-footer social-footer-vk" href="https://vk.com/htmlacademy">
@@ -152,7 +149,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-footer social-footer-tg" href=" https://t.me/htmlacademy">
+            <a class="social-footer social-footer-tg" href="https://t.me/htmlacademy">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
                 <path
                   d="M16.79.1.84 6.25c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18L7.05 9.96l-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8c.28-1.12-.43-1.62-1.16-1.3" />
@@ -160,8 +157,8 @@
               <span class="visually-hidden">Мы в телеграм</span>
             </a>
           </li>
-          <li class="footer-social_item">
-            <a class="social-footer social-footer-yt" href=" https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+          <li class="footer-social-item">
+            <a class="social-footer social-footer-yt" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
                 <path
                   d="M18.6 0H3.18C1.31 0 0 1.6 0 3.4v10.1C0 15.4 1.31 17 3.17 17h15.66c1.64 0 3.17-1.6 3.17-3.4V3.4C21.78 1.6 20.47 0 18.6 0M7.67 12.54V4.46L15 8.5z" />
@@ -183,74 +180,78 @@
       </footer>
     </div>
 
-   <dialog class="modal-dialog" data-test="modal" id="modal" aria-labelledby="modal-name">
-  <header class="modal-header">
-    <h2 class="modal-title" id="modal-name">Поиск гостиницы в Седоне</h2>
-    <button class="modal-close-button" type="button" onclick="window.modal.close()">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-  </header>
+    <dialog class="modal-dialog" data-test="modal" id="modal" aria-labelledby="modal-name">
+      <header class="modal-header">
+        <h2 class="modal-title" id="modal-name">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </header>
 
-  <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-    <div class="modal-date">
-      <label class="modal-label-text" for="check-in-date">Дата заезда:</label>
-      <input class="modal-input modal-input-date" type="text" id="check-in-date" name="check-in-date"
-        value="27 апреля 2028" placeholder="Укажите дату" required>
-      <p class="message error-message">Мы не можем отправить вас в прошлое.</p>
-    </div>
-
-    <div class="modal-date">
-      <label class="modal-label-text" for="check-out-date">Дата выезда:</label>
-      <input class="modal-input modal-input-date" type="text" id="check-out-date" name="check-out-date"
-        value="1 сентября 2023" placeholder="Укажите дату" required>
-      <p class="message">На эти даты есть свободные номера. Пока есть.</p>
-    </div>
-
-    <div class="modal-people">
-      <div class="modal-person">
-        <label class="modal-label-text" for="adults-count">Взрослые:</label>
-        <div class="modal-counter">
-          <button type="button" class="modal-counter-button modal-counter-min">
-            <span class="visually-hidden">Уменьшить количество взрослых</span>
-          </button>
-          <input class="modal-input modal-input-counter" type="number" name="adults-count"
-            id="adults-count" value="2" min="1" max="99" required>
-          <button type="button" class="modal-counter-button modal-counter-plus">
-            <span class="visually-hidden">Увеличить количество взрослых</span>
-          </button>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal-date">
+          <label class="modal-label-text" for="check-in-date">Дата заезда:</label>
+          <input class="modal-input modal-input-date" type="text" id="check-in-date" name="check-in-date"
+            value="27 апреля 2020" placeholder="Укажите дату" required>
+          <p class="message error-message">Мы не можем отправить вас в прошлое.</p>
         </div>
-      </div>
 
-      <div class="modal-person">
-        <div class="modal-person-label">
-          <label class="modal-label-text" for="kids-count">Дети:</label>
-          <div class="modal-tooltip">
-            <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
-              <span class="visually-hidden">Подсказка</span>
-            </button>
-            <span class="info-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
-              возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+        <div class="modal-date">
+          <label class="modal-label-text" for="check-out-date">Дата выезда:</label>
+          <input class="modal-input modal-input-date" type="text" id="check-out-date" name="check-out-date"
+            value="1 сентября 2023" placeholder="Укажите дату" required>
+          <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+        </div>
+
+        <div class="modal-people">
+          <div class="modal-person">
+            <label class="modal-label-text" for="adults-count">Взрослые:</label>
+            <div class="modal-counter">
+              <button type="button" class="modal-counter-button modal-counter-min">
+                <span class="visually-hidden">Уменьшить количество взрослых</span>
+              </button>
+              <input class="modal-input modal-input-counter" type="number" name="adults-count"
+                id="adults-count" value="2" min="1" max="99" required>
+              <button type="button" class="modal-counter-button modal-counter-plus">
+                <span class="visually-hidden">Увеличить количество взрослых</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-person">
+            <div class="modal-person-label">
+              <label class="modal-label-text" for="kids-count">Дети:</label>
+              <div class="modal-tooltip">
+                <button class="tooltip-button" type="button" aria-labelledby="tooltip-label">
+                  <span class="visually-hidden">Подсказка</span>
+                </button>
+                <span class="info-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами,
+                  возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </div>
+            </div>
+            <div class="modal-counter">
+              <button type="button" class="modal-counter-button modal-counter-min">
+                <span class="visually-hidden">Уменьшить количество детей</span>
+              </button>
+              <input class="modal-input modal-input-counter" type="number" name="kids-count"
+                id="kids-count" value="2" min="0" max="99" required>
+              <button type="button" class="modal-counter-button modal-counter-plus">
+                <span class="visually-hidden">Увеличить количество детей</span>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="modal-counter">
-          <button type="button" class="modal-counter-button modal-counter-min">
-            <span class="visually-hidden">Уменьшить количество детей</span>
-          </button>
-          <input class="modal-input modal-input-counter" type="number" name="kids-count"
-            id="kids-count" value="2" min="0" max="99" required>
-          <button type="button" class="modal-counter-button modal-counter-plus">
-            <span class="visually-hidden">Увеличить количество детей</span>
-          </button>
-        </div>
-      </div>
-    </div>
 
-    <button class="find-button" type="submit">Найти</button>
-  </form>
-</dialog>
+        <button class="find-button" type="submit">Найти</button>
+      </form>
+    </dialog>
 
-
-
+    <script>
+      const modal = document.getElementById('modal');
+      const closeButton = document.querySelector('.modal-close-button');
+      closeButton.addEventListener('click', () => {
+        modal.close();
+      });
+    </script>
   </body>
-
 </html>

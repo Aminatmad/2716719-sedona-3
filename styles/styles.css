@@ -81,6 +81,7 @@ body {
   display: flex;
   margin: 0 auto;
   width: 1200px;
+  transform: translateY(2px);
 }
 
 /* ============ ХЭДЕР ============ */
@@ -110,7 +111,7 @@ body {
   width: 140px;
   height: 70px;
   object-fit: contain;
-  margin-top: 1px; /* Аккуратный свис логотипа */
+  margin-top: 0;
 }
 
 .background-text {
@@ -135,6 +136,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  transform: translateY(-2px);
 }
 
 .navigation-user {
@@ -232,7 +234,7 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: auto;
-  transform: translateY(2px);
+  transform: translateY(-2px);
 }
 
 .navigation-button:hover {
@@ -249,7 +251,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* ============ HERO (SEDONA) ============ */
 .sedona-city {
   display: block;
   position: relative;
@@ -300,12 +301,11 @@ body {
 .advantages-item {
   background-color: #82b3d3;
   display: flex;
-
 }
 
 .advantages-wrapper {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   margin: 0;
   padding: 102px 80px;
   display: flex;
@@ -321,7 +321,6 @@ body {
   object-fit: cover;
   display: block;
   border: none;
-
 }
 
 .advantages-item-sedona {
@@ -361,15 +360,15 @@ body {
 }
 
 .advantages-title-sedona {
-position: relative;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: 2px;
+  position: relative;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 2px;
 }
 
 .advantages-title-sedona::after {
@@ -412,15 +411,15 @@ position: relative;
 
 /* ============ СЕРВИС ============ */
 .title-call {
-color: #000000;
-    font-size: 30px;
-    line-height: 37px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0;
-    margin-top: 62px;
-    margin-bottom: 22px;
+  color: #000000;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin-top: 62px;
+  margin-bottom: 22px;
 }
 
 .description-call {
@@ -488,11 +487,11 @@ color: #000000;
 }
 
 .recommend-item-list {
-    font-size: 24px;
-    line-height: 116px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 140px 0 -13px
+  font-size: 24px;
+  line-height: 116px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 140px 0 -13px
 }
 
 .recommend-list-list {
@@ -672,7 +671,7 @@ color: #000000;
   color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 70px 60px;
+  padding: 35px 70px 55px;
 }
 
 .inner-section {
@@ -686,19 +685,20 @@ color: #000000;
   line-height: 78px;
   margin-top: 0;
   margin-bottom: 8px;
+  transform: translateY(-2px); /* Твой сдвиг */
 }
 
 /* --- ХЛЕБНЫЕ КРОШКИ --- */
 .breadcrumbs {
-display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    gap: 10px;
-    transform: translateX(2px);
-    margin-left: -1px;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
+  transform: translateX(2px);
+  margin-left: -1px;
+  margin-top: 10px;
 }
 
 .breadcrumbs-link {
@@ -741,6 +741,7 @@ display: flex;
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
+  transform: translateY(-2px); /* Твой сдвиг */
 }
 
 .catalog-filter-group {
@@ -756,11 +757,20 @@ display: flex;
 }
 
 .catalog-filter-title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 32px;
-    margin-left: -2px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 32px;
+  margin-left: -2px;
+}
+
+.control:hover,
+.filter-label:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
 }
 
 .catalog-products-list {
@@ -867,15 +877,27 @@ display: flex;
   -moz-appearance: textfield;
   border: none;
   padding: 0 20px;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   color: #000000;
   text-align: left;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s, background-color 0.2s
 }
 
 .field-price::-webkit-outer-spin-button,
 .field-price::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.field-price:hover {
+  background-color: #e5e5e5;
+}
+
+.field-price:focus-visible {
+  background-color: #e5e5e5;
+  outline: 2px solid #82b3d3;
+  outline-offset: -2px;
 }
 
 .range-input:first-child .field-price {
@@ -973,6 +995,7 @@ display: flex;
   font-weight: 700;
   text-align: center;
   background-color: #82b3d3;
+  transition: background-color 0.2s;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -986,7 +1009,7 @@ display: flex;
 
 .catalog-submit-btn:focus-visible {
   outline: 2px solid #ffffff;
-  outline-offset: -4px;
+  outline-offset: 2px;
 }
 
 .catalog-submit-btn:active {
@@ -1026,6 +1049,7 @@ display: flex;
   margin-top: 55px;
   margin-bottom: 21px;
   padding: 0 1px 1px;
+  transform: translateY(4px); /* Твой сдвиг */
 }
 
 .catalog-search {
@@ -1039,28 +1063,28 @@ display: flex;
 }
 
 .select-control {
-width: 292px;
-    height: 49px;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 21px;
-    color: #333333;
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-    border-radius: 4px;
-    padding: 0 50px 0 20px;
-    margin-right: 50px;
-    margin-left: auto;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url(../images/icon/down-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: right 20px center;
-    background-size: 12px 12px;
-    cursor: pointer;
-    transform: translateX(-18px);
-    margin-top: -28px;
+  width: 292px;
+  height: 49px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 0 50px 0 20px;
+  margin-right: 50px;
+  margin-left: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../images/icon/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 12px 12px;
+  cursor: pointer;
+  transform: translateX(-18px);
+  margin-top: -28px;
 }
 
 .select-control:hover {
@@ -1073,16 +1097,16 @@ width: 292px;
 }
 
 .card-grid-toggle {
-display: flex;
-    margin-right: 5px;
-    width: 48px;
-    height: 48px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 2px solid #e5e5e5;
-    box-sizing: border-box;
-    margin-top: -29px;
+  display: flex;
+  margin-right: 5px;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  margin-top: -29px;
 }
 
 .card-grid-toggle:hover {
@@ -1095,7 +1119,7 @@ display: flex;
 }
 
 .card-grid-toggle-active {
-  border-color: 2px solid #000000;
+  border: 2px solid #000000;
 }
 
 /* --- СПИСОК ГОСТИНИЦ --- */
@@ -1120,7 +1144,6 @@ display: flex;
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-
 }
 
 .card-img {
@@ -1140,6 +1163,7 @@ display: flex;
 .product-card-link {
   grid-column: 1 / -1;
   text-decoration: none;
+  color: #000000;
 }
 
 .product-card-title {
@@ -1149,6 +1173,9 @@ display: flex;
   line-height: 28px;
   text-decoration: none;
   margin: 0;
+  grid-column: 1 / -1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .product-card-name {
@@ -1241,48 +1268,18 @@ display: flex;
 
 /* --- РЕЙТИНГ И ЗВЁЗДЫ --- */
 .rating-stars {
-     display: flex;
-    gap: 6px;
-    align-items: center;
-    height: 34px;
-    margin-left: -6px;
-    padding-top: 4px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  height: 34px;
+  margin-left: -6px;
+  padding-top: 4px;
+  transform: translateX(6px);
 }
-
 
 .star-icon {
   display: block;
 }
-
-/* Базовые стили для всех звёзд */
-.rating-stars::before {
-  content: "";
-  display: block;
-  height: 17px;
-  background-image: url("../images/icon/stars-icon.svg");
-  background-repeat: space no-repeat;
-}
-
-/* ДЛЯ 4 ЗВЁЗД */
-.rating-stars-4::before {
-  width: 90px; /* Общая ширина с отступами */
-  /* Обрезаем картинку. Если в SVG 5 звезд, мы показываем только часть */
-  background-size: 90px 17px; /* Растягиваем так, чтобы 4 звезды заняли ровно 90px */
-}
-
-/* ДЛЯ 3 ЗВЁЗД */
-.rating-stars-3::before {
-  width: 66px;
-  background-size: 66px 17px;
-}
-
-/* ДЛЯ 2 ЗВЁЗД */
-.rating-stars-2::before {
-  width: 42px;
-  background-size: 42px 17px;
-}
-
-
 
 .rating {
   margin: 0;
@@ -1307,6 +1304,7 @@ display: flex;
   margin-top: -4px;
   list-style: none;
   margin-bottom: 62px;
+  transform: translateY(3px);
 }
 
 .pagination-link {
@@ -1369,22 +1367,33 @@ display: flex;
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 36px 70px 35px;
+  padding: 20px 70px;
+  min-height: 120px;
   align-items: center;
+  transform: translateY(-3px) ;
 }
+
+.page-footer-index {
+ transform: translateY(-5px);
+}
+
+
 
 .footer-social-list {
   display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 5px;
-    margin: 10px;
-    max-width: 250px;
-    margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 180px;
+  margin-left: -39px;
+  margin-top: 29px;
 }
 
 .footer-social-item {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-footer a {
@@ -1399,6 +1408,10 @@ display: flex;
   background-position: center;
   width: 47px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -2px);
 }
 
 .social-footer svg {
@@ -1418,15 +1431,15 @@ display: flex;
 }
 
 .phone-number {
-     display: block;
-    color: #000000;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    transform: translateX(-12px);
-    text-decoration: none;
+  display: block;
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  text-decoration: none;
+  transform: translate(0,17px);
 }
 
 .phone-number:hover {
@@ -1443,10 +1456,10 @@ display: flex;
 }
 
 .page-footer-link {
-      display: block;
-    margin: 0;
-    margin-top: -13px;
-    transform: translateX(1px);
+  display: block;
+  margin: 0;
+  margin-top: -13px;
+  transform: translateY(12px);
 }
 
 .page-footer-link svg {
@@ -1473,7 +1486,6 @@ display: flex;
   padding: 64px 70px;
   border: 0;
   width: 717px;
-  position: relative;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1501,15 +1513,22 @@ display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.2s, background-color 0.2s;
 }
 
 .modal-close-button:hover {
   background-color: #e5e5e5;
+  opacity: 0.6;
 }
 
 .modal-close-button:focus-visible {
   outline: 2px solid #82b3d3;
   outline-offset: 2px;
+}
+
+.modal-close-button:active {
+  background-color: #e5e5e5;
+  opacity: 0.3;
 }
 
 .modal-close-button::before {
@@ -1542,6 +1561,8 @@ display: flex;
   gap: 0 10px;
   margin-bottom: 23px;
   align-items: start;
+  position: relative;
+  left: -2px;
 }
 
 .modal-label-text {
@@ -1566,10 +1587,35 @@ display: flex;
 
 .modal-input-date {
   width: 440px;
+  padding: 12px 50px 12px 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+}
+
+.modal-date::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 25px;
+  right: 20px;
+  transform: translateY(-50%);
   background-image: url("../images/icon/date.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
-  padding-right: 50px;
+  background-size: contain;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.modal-input-date:focus {
+  opacity: 1;
 }
 
 .modal-input:focus-visible {
@@ -1589,11 +1635,10 @@ display: flex;
   color: #ff5757;
 }
 
-/* --- Взрослые / Дети --- */
 .modal-people {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
   margin-bottom: 48px;
 }
@@ -1608,26 +1653,33 @@ display: flex;
 .modal-person-label {
   display: flex;
   align-items: center;
-  gap: 4px;
+  margin-left: 10px;
 }
 
 .modal-person-label .modal-label-text {
   padding: 0;
   white-space: nowrap;
+  transform: translateX(-2px);
 }
 
+/* Исправленный дубль: теперь один блок modal-counter */
 .modal-counter {
   display: flex;
   align-items: center;
   height: 48px;
   background-color: #f2f2f2;
   border-radius: 4px;
+  width: 110px;
+  justify-content: center;
+  gap: 2px;
+  padding-right: 8px;
+  padding-left: 4px;
 }
 
 .modal-counter-button {
   display: flex;
-  width: 40px;
-  height: 48px;
+  width: 26px;
+  height: 26px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -1635,45 +1687,54 @@ display: flex;
   justify-content: center;
   flex-shrink: 0;
   position: relative;
+  border-radius: 4px;
+  margin: 11px;
 }
 
-.modal-counter-button:hover {
-  background-color: #e5e5e5;
-}
-
+/* Исправленный дубль focus-visible */
 .modal-counter-button:focus-visible {
-  outline: 2px solid #82b3d3;
-  outline-offset: -2px;
+  outline: none;
+  box-shadow: 0 0 0 2px #82b3d3;
 }
 
-.modal-counter-min::before {
-  content: "";
-  display: block;
-  width: 14px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.modal-counter-plus::before,
-.modal-counter-plus::after {
+.modal-counter-button::before,
+.modal-counter-button::after {
   content: "";
   display: block;
   position: absolute;
   width: 14px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
   top: 50%;
   left: 50%;
   margin-top: -1px;
   margin-left: -7px;
+  background-color: rgba(117, 97, 87, 0.3); /* Покой: 30% */
+  transition: background-color 0.2s;
 }
 
 .modal-counter-plus::after {
   transform: rotate(90deg);
 }
 
+.modal-counter-button:hover::before,
+.modal-counter-button:hover::after {
+  background-color: #000000;
+}
+
+.modal-counter-button:focus-visible::before,
+.modal-counter-button:focus-visible::after {
+  background-color: #000000;
+}
+
+/* НАЖАТИЕ: черные с прозрачностью 20% */
+.modal-counter-button:active::before,
+.modal-counter-button:active::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* --- ИНПУТ С ЦИФРОЙ --- */
 .modal-input-counter {
-  width: 31px;
+  width: 20px;
   text-align: center;
   border-radius: 0;
   padding: 12px 0;
@@ -1683,6 +1744,9 @@ display: flex;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  border: none;
+  color: #000000;
+  pointer-events: none; /* Запрещаем ввод вручную */
 }
 
 .modal-input-counter::-webkit-outer-spin-button,
@@ -1699,6 +1763,7 @@ display: flex;
   height: 26px;
   align-items: center;
   justify-content: center;
+  transform: translateX(9px);
 }
 
 .tooltip-button {
@@ -1712,6 +1777,7 @@ display: flex;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  padding: 0;
 }
 
 .tooltip-button:hover,
@@ -1735,6 +1801,7 @@ display: flex;
   text-align: left;
   border-radius: 10px;
   box-sizing: border-box;
+  padding: 20px 22px 24px 22px;
 }
 
 .info-text::before {
@@ -1788,6 +1855,7 @@ display: flex;
   background-color: #68a2ca;
   color: rgba(255, 255, 255, 0.3);
 }
+
 /* ПЕРВЫЙ КВАДРАТИК (Плитка) */
 .sorting-container .card-grid-toggle:nth-child(3) {
   transform: translateY(1px); /* Сдвигает вверх на 5px */
@@ -1803,16 +1871,26 @@ display: flex;
 .sorting-container .card-grid-toggle:nth-child(5) {
   transform: translateX(5px); /* Сдвигает влево на 10px */
 }
-.product-list li:nth-child(4){
+
+.product-list li:nth-child(4) {
   margin-top: -2px;
 }
-.social-footer-vk {
-transform: translateX(-2px);
-}
-.social-footer-yt {
-transform: translateX(-1px);
-}
+
 .title-part {
   display: inline-block;
   transform: translateX(-3px) translateY(1px);
+}
+
+.catalog-title {
+  transform: translateY(-2px); /* Заменили position на безопасный transform */
+}
+
+.catalog-list {
+  transform: translateY(-1px); /* Заменили position на безопасный transform */
+}
+
+label[for="check-in-date"],
+label[for="check-out-date"] {
+  position: relative;
+  left: 2px;
 }
